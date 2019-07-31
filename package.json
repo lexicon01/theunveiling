@@ -1,0 +1,17 @@
+{
+  "name": "Disclosure-site",
+  "version": "1.0.0",
+  "description": "andrews project on github",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss main.css -w"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "Lexicon",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

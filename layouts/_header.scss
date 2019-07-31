@@ -1,0 +1,151 @@
+
+
+
+
+.header {
+    height: 95vh;
+ 
+    background-image:linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.5),
+      rgba($color-primary-dark, 0.3)), url(pic/space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 59%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 59%);
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 59%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 59%);
+    }
+    
+    .logo-box {
+     position: absolute;
+     top: 7rem;
+     left: 6rem;
+     -webkit-filter: brightness(0) invert(1);
+   filter: brightness(0) invert(1);
+     height: 7rem;
+     width: auto;
+
+     @include respond(tab-port) {
+        top: 4rem;
+        left: 2.5rem;
+     }
+
+     @include respond(phone) {
+        top: 4rem;
+        left: 4rem;
+     }
+
+  }
+ }
+ 
+ .text-box {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-family: 'Passion One', cursive;
+  //  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+   
+   .heading-primary {
+     text-transform: uppercase;
+     color: #fff;
+     text-align: center;
+  }
+  
+  
+  .heading-primary-main {
+     display: block;
+     font-size: 45px;
+     font-weight: 700px;
+     letter-spacing: 30px;
+     animation-name: moveInLeft;
+     animation-duration: 3s;
+     animation-timing-function: ease-out;
+
+
+     @include respond(phone) {
+         letter-spacing: 1rem;
+         font-family: 5rem;
+     }
+  }
+  
+  .heading-primary-sub {
+     display: block;
+     font-size: 35px;
+     font-weight: 700px;
+     letter-spacing: 15px;
+     animation-name: moveInRight;
+     animation-duration: 3s;
+
+     @include respond(phone) {
+        letter-spacing: .5rem;
+        font-family: 5rem;
+    }
+  }
+ 
+ 
+ }
+ 
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient($color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
+    
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.logo {
+    height: 100%;
+    @include respond(tab-port) {
+        top: 4.5rem;
+        left:  2.5rem;
+        height: 55px;
+        width: auto;
+
+    }
+
+    @include respond(phone) {
+        top: 3rem;
+        left: 3rem;
+        height: 85%;
+        width: auto;
+    }
+}
