@@ -362,6 +362,18 @@ body {
         position: relative;
         width: 33.33333333%;
         box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2); } }
+    @media only screen and (max-width: 37.5em) {
+      .composition__photo {
+        width: 33.33333%;
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        transform: translateX(-3rem) skewX(12deg) scale(1.5);
+        position: relative;
+        perspective: 1000;
+        overflow: hidden; } }
     .composition__photo--p1 {
       left: 0;
       top: -2rem; }
@@ -919,6 +931,10 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 59%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 59%); }
   @media only screen and (max-width: 37.5em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%); } }
+  @media only screen and (max-width: 56.25em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
       clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%); } }

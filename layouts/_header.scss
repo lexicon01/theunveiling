@@ -19,6 +19,11 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
     }
+
+    @include respond(tab-port) { // testing this out screen isometric(ithink)
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
+    }
     
     .logo-box {
      position: absolute;
