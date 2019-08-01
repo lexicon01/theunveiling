@@ -169,8 +169,10 @@
         @include respond(phone)  {
             bottom: 0;
             font-weight: 500;
-            margin-bottom: 0;
+            margin-bottom: 0rem;
             padding-bottom: 0;
+            position: relative;
+            top: -15px;
         }
     }
 

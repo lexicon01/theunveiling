@@ -308,8 +308,10 @@ body {
       .card__price-spacing {
         bottom: 0;
         font-weight: 500;
-        margin-bottom: 0;
-        padding-bottom: 0; } }
+        margin-bottom: 0rem;
+        padding-bottom: 0;
+        position: relative;
+        top: -15px; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
