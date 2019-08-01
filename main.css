@@ -336,7 +336,11 @@ body {
         left: 0;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
+        padding: 7rem 4rem 4rem 4rem; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
+    .card__cta-blue {
+      padding: 5rem 4rem 4rem 4rem; } }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {

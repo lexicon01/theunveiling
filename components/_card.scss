@@ -215,6 +215,14 @@
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem;
+        
+       
+    }
+
+    &__cta-blue {
+        @include respond(phone) {
+            padding: 5rem 4rem 4rem 4rem;
+        }
     }
 
     &__price-box {
