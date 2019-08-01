@@ -20,7 +20,7 @@
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
     }
 
-    @include respond(tab-port) { // testing this out screen isometric(ithink)
+    @include respond(tab-port) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
         clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 69%);
     }
