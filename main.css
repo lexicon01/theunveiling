@@ -150,6 +150,9 @@ body {
   background-color: #fff;
   color: #777;
   margin-top: 40px; }
+  @media only screen and (max-width: 37.5em) {
+    .btn--white {
+      margin: 0; } }
   .btn--white::after {
     background-color: #fff; }
 
@@ -177,8 +180,9 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-#top-btn-margin {
-  position: relative; }
+@media only screen and (max-width: 37.5em) {
+  #top-btn-margin {
+    margin-top: 4rem; } }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -291,12 +295,21 @@ body {
   .card__price-only {
     font-size: 2.4rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .card__price-only {
+        margin-top: 5rem; } }
   .card__price-value {
     font-size: 3rem;
     font-weight: 300; }
   .card__price-spacing {
     position: relative;
     bottom: -8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .card__price-spacing {
+        bottom: 0;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-bottom: 0; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;

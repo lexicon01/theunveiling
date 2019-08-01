@@ -38,6 +38,10 @@
         color: $color-grey-dark;
         margin-top: 40px;
 
+        @include respond(phone)  {
+            margin: 0;
+        }
+
         &::after {
             background-color: $color-white;
         }
@@ -81,7 +85,9 @@
 //        TEXT AND WHT BTN 
 
 #top-btn-margin {
-        position: relative;
+    @include respond(phone)  {
+        margin-top: 4rem;
+    }
      
     
     }

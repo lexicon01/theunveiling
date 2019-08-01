@@ -150,17 +150,28 @@
     &__price-only {
         font-size: 2.4rem;
         text-transform: uppercase;
+        @include respond(phone)  {
+            margin-top: 5rem;
+        }
     }
 
     &__price-value {
         font-size: 3rem;
         font-weight: 300;
+
+        
+      
     }
     
     &__price-spacing {
         position: relative;
         bottom: -8rem;
-        
+        @include respond(phone)  {
+            bottom: 0;
+            font-weight: 500;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
     }
 
 
