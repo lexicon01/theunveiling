@@ -292,6 +292,9 @@ body {
     text-align: center;
     margin-bottom: 8rem;
     color: white; }
+    @media only screen and (max-width: 37.5em) {
+      .card__price-box {
+        margin-bottom: 0; } }
   .card__price-only {
     font-size: 2.4rem;
     text-transform: uppercase; }
@@ -300,7 +303,10 @@ body {
         margin-top: 5rem; } }
   .card__price-value {
     font-size: 3rem;
-    font-weight: 300; }
+    font-weight: 500; }
+    @media only screen and (max-width: 56.25em) {
+      .card__price-value {
+        font-size: .5rem; } }
   .card__price-spacing {
     position: relative;
     bottom: -8rem; }
@@ -309,14 +315,19 @@ body {
         position: relative;
         top: 4rem;
         line-height: 4.1rem;
-        padding: 6rem 0;
+        padding: 0rem 0;
         font-weight: 500; } }
     @media only screen and (max-width: 56.25em) {
       .card__price-spacing {
-        margin-top: -10rem;
+        margin-top: 0rem;
         line-height: 4.1rem;
         padding: 3rem 0;
         font-weight: 600; } }
+    @media only screen and (max-width: 75em) {
+      .card__price-spacing {
+        position: relative;
+        top: 4rem;
+        line-height: 4.1rem; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -342,12 +353,16 @@ body {
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem; } }
-  @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
-    .card__cta-blue {
-      padding: 5rem 4rem 4rem 4rem; } }
+    @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
+      .card__cta {
+        padding: 2rem 4rem 4rem 4rem; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       .card__price-box {
-        margin-bottom: 3rem; }
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
+      .card__price-box {
+        padding: 2rem 0; } }
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       .card__price-value {
         font-size: 4rem; } }
 

@@ -131,7 +131,7 @@
         }
 
     }
-
+    // for some reason we have double..
     &__cta {
         position: absolute;
         top: 50%;
@@ -139,12 +139,23 @@
         transform: translate(-50%, -50%);
         width: 90%;
         text-align: center;
+
     }
 
     &__price-box {
         text-align: center;
         margin-bottom: 8rem;
         color: white;
+
+        @include respond(phone){            
+            margin-bottom: 0;
+        }
+        @include respond(phone){            
+
+        }
+        @include respond(phone){            
+
+        }
     }
 
     &__price-only {
@@ -159,9 +170,11 @@
 
     &__price-value {
         font-size: 3rem;
-        font-weight: 300;
+        font-weight: 500;
 
-        
+        @include respond(tab-port) {
+            font-size: .5rem;
+        }
       
     }
     
@@ -172,14 +185,22 @@
             position: relative;
             top: 4rem;
             line-height: 4.1rem;
-            padding: 6rem 0 ;
+            padding: 0rem 0 ;
             font-weight: 500;
+            
         }
         @include respond(tab-port)  {
-           margin-top: -10rem;
+           margin-top: 0rem;
            line-height: 4.1rem;
            padding: 3rem 0 ;
            font-weight: 600;
+        }
+        @include respond(tab-land) {
+            position: relative;
+            top: 4rem;
+            line-height: 4.1rem;
+            
+
         }
     }
 
@@ -222,18 +243,22 @@
         transform: translate(0);
         width: 100%;
         padding: 7rem 4rem 4rem 4rem;
-        
+        @include respond(phone){
+            padding: 2rem 4rem 4rem 4rem;
+        }
        
     }
 
-    &__cta-blue {
-        @include respond(phone) {
-            padding: 5rem 4rem 4rem 4rem;
-        }
-    }
+    
 
     &__price-box {
         margin-bottom: 3rem;
+        @include respond(phone) {
+            padding: 2rem 0 ;
+        }
+        @include respond(tab-port) {
+
+        }
     }
 
     &__price-value {
