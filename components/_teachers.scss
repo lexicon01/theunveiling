@@ -4,16 +4,22 @@
     border-radius: 3px;
     font-size: $default-font-size;
     
-    
+    @include respond(tab-land){
+        margin: 0 auto 0 30px;
+        transform: translateX(2rem);
+        
+    }    
 
     @include respond(tab-port) {
         width: 100%;
-        padding: 4rem;
-        padding-left: 7rem;
+        padding: 2rem;
+        padding-left: 2rem;
+        transform: translateX(4rem);
     }
 
     @include respond(phone) {
-        transform: skewX(0)
+        transform: translateX(5rem);
+        padding: 1rem;
         
     }
 
@@ -78,13 +84,19 @@
     }
 
     &__text {
-        transform: skewX(12deg);
-
-        @include respond(phone) {
-            transform:  skewX(0);
-            
-        }
+       @include respond(phone){
+           font-size: 1.5rem;
+           line-height: 2.8rem;
+       }
+       @include respond(tab-port){
+            font-size: 2rem;
+       }
+       @include respond(tab-land){
+            font-size: 2rem;
+       }
+    
     }
+
     &__caption {
         position: absolute;
         top: 50%;

@@ -422,6 +422,9 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
+  @media only screen and (max-width: 75em) {
+    .feature-box {
+      min-width: 305px; } }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
@@ -675,14 +678,20 @@ body {
   margin: 0 auto;
   border-radius: 3px;
   font-size: 1.6rem; }
+  @media only screen and (max-width: 75em) {
+    .teachers {
+      margin: 0 auto 0 30px;
+      transform: translateX(2rem); } }
   @media only screen and (max-width: 56.25em) {
     .teachers {
       width: 100%;
-      padding: 4rem;
-      padding-left: 7rem; } }
+      padding: 2rem;
+      padding-left: 2rem;
+      transform: translateX(4rem); } }
   @media only screen and (max-width: 37.5em) {
     .teachers {
-      transform: skewX(0); } }
+      transform: translateX(5rem);
+      padding: 1rem; } }
   .teachers__shape {
     width: 15rem;
     height: 15rem;
@@ -723,11 +732,16 @@ body {
     .teachers__img-rudolf {
       position: relative;
       right: 6rem; }
-  .teachers__text {
-    transform: skewX(12deg); }
-    @media only screen and (max-width: 37.5em) {
-      .teachers__text {
-        transform: skewX(0); } }
+  @media only screen and (max-width: 37.5em) {
+    .teachers__text {
+      font-size: 1.5rem;
+      line-height: 2.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .teachers__text {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 75em) {
+    .teachers__text {
+      font-size: 2rem; } }
   .teachers__caption {
     position: absolute;
     top: 50%;
@@ -1118,6 +1132,15 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-tertiary {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 2.2rem; } }
+  @media only screen and (max-width: 75em) {
+    .heading-tertiary {
+      font-size: 2.3rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
