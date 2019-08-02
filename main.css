@@ -714,6 +714,15 @@ body {
     .teachers__img-madgy {
       position: relative;
       right: 17px; }
+    .teachers__img-mike {
+      position: relative;
+      right: 6rem; }
+    .teachers__img-para {
+      position: relative;
+      right: .5rem; }
+    .teachers__img-rudolf {
+      position: relative;
+      right: 6rem; }
   .teachers__text {
     transform: skewX(12deg); }
     @media only screen and (max-width: 37.5em) {
