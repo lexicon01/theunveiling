@@ -18,7 +18,7 @@
     }
 
     @include respond(phone) {
-        transform: translateX(5rem);
+        transform: translateX();
         padding: 1rem;
         
     }
