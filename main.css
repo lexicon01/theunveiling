@@ -732,16 +732,19 @@ body {
     .teachers__img-rudolf {
       position: relative;
       right: 6rem; }
-  @media only screen and (max-width: 37.5em) {
-    .teachers__text {
-      font-size: 1.5rem;
-      line-height: 2.8rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .teachers__text {
-      font-size: 2rem; } }
-  @media only screen and (max-width: 75em) {
-    .teachers__text {
-      font-size: 2rem; } }
+  .teachers__text {
+    padding-top: .3rem;
+    line-height: 1.8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .teachers__text {
+        font-size: 1.5rem;
+        line-height: 2.8rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .teachers__text {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 75em) {
+      .teachers__text {
+        font-size: 2rem; } }
   .teachers__caption {
     position: absolute;
     top: 50%;
@@ -762,6 +765,114 @@ body {
   .teachers__link {
     color: #777;
     text-decoration: none; }
+
+.teach-btn, .teach-btn:link, .teach-btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .8rem 1.5rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .teach-btn, .teach-btn:link, .teach-btn:visited {
+      font-size: 1.1rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .teach-btn, .teach-btn:link, .teach-btn:visited {
+      font-size: 1.3rem; } }
+  @media only screen and (max-width: 75em) {
+    .teach-btn, .teach-btn:link, .teach-btn:visited {
+      font-size: 1.5rem; } }
+
+.teach-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .teach-btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.teach-btn:active, .teach-btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.teach-btn-links {
+  display: flex;
+  justify-content: space-between; }
+
+.teach-btn--white {
+  background-color: #fff;
+  color: #777;
+  margin-top: 1rem;
+  font-weight: 750;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .teach-btn--white {
+      margin: 0; } }
+  .teach-btn--white::after {
+    background-color: #fff; }
+
+.teach-btn--red {
+  background-color: red;
+  color: #e7e4e4;
+  margin-top: 1rem;
+  font-weight: 750; }
+  @media only screen and (max-width: 37.5em) {
+    .teach-btn--red {
+      margin: 0; } }
+  .teach-btn--red::after {
+    background-color: red; }
+
+.teach-btn--blue {
+  background-color: #054ec4;
+  color: #fff; }
+  .teach-btn--blue::after {
+    background-color: #054ec4; }
+  .teach-btn--blue--bugfix {
+    margin-top: 50rem; }
+
+.teach-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.teach-btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+@media only screen and (max-width: 37.5em) {
+  #top-btn-margin {
+    margin-top: 4rem; } }
+
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #054ec4;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #054ec4;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #054ec4;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 .footer {
   background-color: #333;
