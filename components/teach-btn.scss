@@ -71,6 +71,20 @@
         }
     }
 
+    &--facebook {
+        background-color: #4267b2;
+        color: rgb(238, 235, 235);
+        margin-top: 1rem;
+        font-weight: 750;
+
+        @include respond(phone) {
+            margin: 0;
+        }
+        &::after {
+            background-color: #4267b2;
+        }
+    }
+
     &--red {
         background-color: rgb(214, 29, 29);
         color: rgb(231, 228, 228);

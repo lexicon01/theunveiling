@@ -816,6 +816,17 @@ body {
   .teach-btn--white::after {
     background-color: #fff; }
 
+.teach-btn--facebook {
+  background-color: #4267b2;
+  color: #eeebeb;
+  margin-top: 1rem;
+  font-weight: 750; }
+  @media only screen and (max-width: 37.5em) {
+    .teach-btn--facebook {
+      margin: 0; } }
+  .teach-btn--facebook::after {
+    background-color: #4267b2; }
+
 .teach-btn--red {
   background-color: #d61d1d;
   color: #e7e4e4;
