@@ -136,3 +136,24 @@
 
 
 }
+
+.row-anime{
+    animation: moveInLeft .5s ease-out .75s;
+    animation-fill-mode: forwards;
+}
+
+.heading-title{
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include respond(phone) {
+        font-size: 2rem;
+        
+    }
+    @include respond(tab-port){
+        font-size: 2.2rem;
+    }
+    @include respond(tab-land){
+        font-size: 2.3rem;
+    }
+}
