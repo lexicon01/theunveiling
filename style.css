@@ -1,32 +1,123 @@
-.card-block {
-	background-color: rgba(255,255,255, .7);
+body {
+	margin: 0 ;
+	background: #0e131b;
+}
+h1 {
+
+	color: #61a6d0;
+	font-family: 'Cinzel', serif;
+	text-align: center;
+}
+h2 {
+	color: #61a6d0;
+	font-family: 'Cinzel', serif;
+	position: relative;
+	text-align: center;
 }
 
-.wrapper{
-    padding: 20rem 0;
-    background-image: linear-gradient(to right bottom, rgba(22, 107, 244, 0.9), rgba(9, 63, 150, 0)), url(pic/space.jpg);
-    background-position: center center;
-    background-size: cover;
-    transform: skewY(-7deg);
-    margin-top: -10rem;
+.content {
+	margin: 0 25% 0 25%;
+}
+.content img {
+	display: block;
+    width: 70%;
+    height: auto;
+	border-radius: 15px;
+	margin: 0 auto;
+}
+.content h1 {
+	color: #61a6d0;
+	font-family: 'Cinzel', serif;
+	position: relative;
+
+
 }
 
-.wrapper > * {
-	transform: skewY(7deg);
-}
-
-.card-shape {
-	-webkit-clip-path: circle(50% at 50% 50%); 
-	 clip-path: circle(50% at 50% 50%);
-	transform: scale(.57);
-	 
-}
-
-.card-space img {
-	width: 100%;
-	width: 130%;
-	height: 90%;
-	transform: translateX(-30px);
+.content p {
+	font-family: 'Cinzel', serif;
+	color: #61a6d0;
+	font-size: 140%;
+	text-align: justify;
+	padding: 0 11% 0 11%;
 
 	
+}
+
+button {
+	padding: 20px;
+	background-color: #2256aa;
+	text-decoration: none;
+	color: #fff;
+	border: none;
+	border-radius: 100px;
+	display: block;
+	justify-content: center;
+	margin-top:30px;
+	position: relative;
+	left: 43%;
+
+}
+button:hover {
+	background-color: #122c56;
+	animation-name: btnlight;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+ 
+@keyframes btnlight {
+	100% {
+		background-color: lightsteelblue;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.container {
+		margin: 0 6% 0 6%;
+	}
+	h1{
+		text-align: center;
+		margin-bottom: 5%;
+	}
+
+
+	.content img {
+
+		width: 100%;
+		height: auto;
+		background-size: cover;
+		margin: 5% 0 10% 0;
+		position: relative;
+		/*  --- this addeds space that hard
+			to remove.. i dont think 
+			you should use this.. maybe 
+			for special reasons ----
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+		*/		
+		border-radius: 15px;
+	
+	}
+
+	.content {
+		margin: 10% 0 0 0;
+	}
+
+	h1,h2 {
+		text-align: center;
+		display: block;
+		margin-top: 0;
+	}
+	
+
+	
+	button {
+		left: 40%;
+		text-decoration: none;
+	}
 }

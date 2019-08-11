@@ -434,8 +434,6 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
-  .feature-box__fix {
-    transform: translateY(-1.5rem) scale(1.03); }
 
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
@@ -768,24 +766,6 @@ body {
     color: #777;
     text-decoration: none; }
 
-.row-anime {
-  animation: moveInLeft .5s ease-out .75s;
-  animation-fill-mode: forwards; }
-
-.heading-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-  @media only screen and (max-width: 37.5em) {
-    .heading-title {
-      font-size: 2rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .heading-title {
-      font-size: 2.2rem; } }
-  @media only screen and (max-width: 75em) {
-    .heading-title {
-      font-size: 2.3rem; } }
-
 .teach-btn, .teach-btn:link, .teach-btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -905,102 +885,6 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
-.rowf {
-  max-width: 114rem;
-  margin: 0 auto; }
-  .rowf:not(:last-child) {
-    margin-bottom: 8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .rowf:not(:last-child) {
-        margin-bottom: 6rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .rowf {
-      max-width: 50rem;
-      padding: 0 3rem; } }
-  .rowf::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .rowf [class^="col-"] {
-    float: left; }
-    .rowf [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
-      @media only screen and (max-width: 56.25em) {
-        .rowf [class^="col-"]:not(:last-child) {
-          margin-right: 0;
-          margin-bottom: 6rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .rowf [class^="col-"] {
-        width: 100% !important; } }
-  .rowf .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
-  .rowf .col-1-of-3 {
-    width: calc((100% - 2 * 6rem) / 3); }
-  .rowf .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem); }
-  .rowf .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4); }
-    @media only screen and (max-width: 75em) {
-      .rowf .col-1-of-4 {
-        width: calc((100% - 2 * 6rem) / 3);
-        margin-bottom: 4rem;
-        transform: translate(60%, 0%);
-        margin-top: -0rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .rowf .col-1-of-4 {
-        transform: none; } }
-    @media only screen and (max-width: 37.5em) {
-      .rowf .col-1-of-4 {
-        transform: none; } }
-  .rowf .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
-  .rowf .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
-
-#row-fix {
-  margin-bottom: 10px;
-  margin-top: 3rem; }
-
-.carousel-inner > .active {
-  display: flex;
-  flex-wrap: wrap; }
-
-/*
-.row {
-    max-width: $grid-width;
-    // background-color: #eee;
-    margin: 0 auto;
-    margin-bottom: $gutter-vertical;
-
-    &:not(:last-child) {
-        margin-bottom: $gutter-vertical;
-
-        @include respond(tab-port) {
-            margin-bottom: $gutter-vertical-small;
-        }
-    }
-
-    @include clearfix;
-
-    [class^="col-"] {
-
-        // background-color: orangered;
-        float: left;
-
-        &:not(:last-child) {
-            margin-right: $gutter-horizontal;
-
-            @include respond(tab-port) {
-                margin-right: 0;
-                margin-bottom: $gutter-vertical-small;
-            }
-        }
-
-        @include respond(tab-port) {
-            width: 100% !important;
-        }
-    }
-*/
 .footer {
   background-color: #333;
   padding: 10rem 0;
