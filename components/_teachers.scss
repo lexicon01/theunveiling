@@ -86,17 +86,25 @@
     &__text {
         padding-top: .3rem;
         line-height: 1.8rem;
+        padding-bottom: .5rem;
         
-       @include respond(phone){
-           font-size: 1.5rem;
-           line-height: 2.8rem;
+        @include respond(tab-land){
+            font-size: 2rem;
+            line-height: 2.8rem;
+            padding-bottom: .5rem;
        }
+
        @include respond(tab-port){
             font-size: 2rem;
+            line-height: 2.8rem;
+            padding-bottom: 1rem;
        }
-       @include respond(tab-land){
-            font-size: 2rem;
-       }
+    
+       @include respond(phone){
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-bottom: 0rem;
+    }
     
     }
 

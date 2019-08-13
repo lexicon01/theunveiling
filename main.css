@@ -734,17 +734,23 @@ body {
       right: 6rem; }
   .teachers__text {
     padding-top: .3rem;
-    line-height: 1.8rem; }
-    @media only screen and (max-width: 37.5em) {
-      .teachers__text {
-        font-size: 1.5rem;
-        line-height: 2.8rem; } }
-    @media only screen and (max-width: 56.25em) {
-      .teachers__text {
-        font-size: 2rem; } }
+    line-height: 1.8rem;
+    padding-bottom: .5rem; }
     @media only screen and (max-width: 75em) {
       .teachers__text {
-        font-size: 2rem; } }
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding-bottom: .5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .teachers__text {
+        font-size: 2rem;
+        line-height: 2.8rem;
+        padding-bottom: 1rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .teachers__text {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-bottom: 0rem; } }
   .teachers__caption {
     position: absolute;
     top: 50%;
