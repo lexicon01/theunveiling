@@ -267,20 +267,47 @@ body {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      @media screen and (max-width: 1000px) {
+        .card__heading-span--2 {
+          position: relative;
+          top: -3rem; } }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(144, 237, 144, 0.85), rgba(0, 100, 0, 0.85)); }
   .card__details {
-    padding: 3rem; }
+    padding: 3rem;
+    overflow: hidden; }
     .card__details ul {
       list-style: none;
       width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      overflow: hidden; }
       .card__details ul li {
         text-align: center;
         font-size: 1.5rem;
-        padding: 1rem; }
+        padding: 1rem;
+        overflow: hidden; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+    .card__details-3phases {
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      padding: .5rem; }
+      @media only screen and (max-width: 75em) {
+        .card__details-3phases {
+          width: 100%;
+          overflow: hidden;
+          padding: .5rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .card__details-3phases {
+          width: 100%;
+          overflow: hidden;
+          padding: .5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .card__details-3phases {
+          width: 100%;
+          overflow: hidden;
+          padding: .5rem; } }
   .card__cta {
     position: absolute;
     top: 50%;

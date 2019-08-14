@@ -103,7 +103,13 @@
         }
 
         &--2{
-            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));        }
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85)); 
+        
+            @media screen and (max-width: 1000px) {
+                position: relative;
+                top: -3rem;
+            }
+        }
 
         &--3{
             background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));        }
@@ -111,24 +117,54 @@
 
     &__details {
         padding: 3rem;
+        overflow: hidden;
+
+        
+
         & ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
-
+            overflow: hidden;
 
             & li {
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
-                
+                overflow: hidden;
                 &:not(:last-child) {
                     border-bottom: 1px solid $color-grey-light-2;
+                
                 }
 
 
             }
+    
         }
+
+        &-3phases {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: .5rem;
+            @include respond(tab-land) {
+                width: 100%;
+                overflow: hidden;
+                padding: .5rem;
+            }
+            @include respond(tab-port) {
+                width: 100%;
+                overflow: hidden;
+                padding: .5rem;
+            }
+            @include respond(phone) {
+                width: 100%;
+                overflow: hidden;
+                padding: .5rem;
+            }
+        }
+
+
 
     }
     // for some reason we have double..
