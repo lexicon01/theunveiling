@@ -146,21 +146,22 @@
             width: 100%;
             margin: 0 auto;
             overflow: hidden;
-            padding: .5rem;
+            padding: 1rem;
+            line-height: 2rem;
             @include respond(tab-land) {
                 width: 100%;
                 overflow: hidden;
-                padding: .5rem;
+                padding: 1rem;
             }
             @include respond(tab-port) {
                 width: 100%;
                 overflow: hidden;
-                padding: .5rem;
+                padding: 1rem;
             }
             @include respond(phone) {
                 width: 100%;
                 overflow: hidden;
-                padding: .5rem;
+                padding: 1rem;
             }
         }
 

@@ -292,22 +292,23 @@ body {
       width: 100%;
       margin: 0 auto;
       overflow: hidden;
-      padding: .5rem; }
+      padding: 1rem;
+      line-height: 2rem; }
       @media only screen and (max-width: 75em) {
         .card__details-3phases {
           width: 100%;
           overflow: hidden;
-          padding: .5rem; } }
+          padding: 1rem; } }
       @media only screen and (max-width: 56.25em) {
         .card__details-3phases {
           width: 100%;
           overflow: hidden;
-          padding: .5rem; } }
+          padding: 1rem; } }
       @media only screen and (max-width: 37.5em) {
         .card__details-3phases {
           width: 100%;
           overflow: hidden;
-          padding: .5rem; } }
+          padding: 1rem; } }
   .card__cta {
     position: absolute;
     top: 50%;
