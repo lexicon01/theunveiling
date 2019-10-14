@@ -25,8 +25,12 @@
             left: 0;
             top: -2rem;
 
+            //photo edit max spiers
+            transform: scale(.9);
+      
+
             @include respond(tab-port)  {
-                top: 0;
+                top: -5px;
                 transform: scale(1.2);
             }
         }
@@ -34,6 +38,7 @@
         &--p2 {
             right: 0;
             top: 2rem;
+            
 
             @include respond(tab-port)  {
                 top: .4rem;
