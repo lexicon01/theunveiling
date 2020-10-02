@@ -1,0 +1,306 @@
+.card {
+
+    //functionality
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem; 
+
+    &__side {
+        color: black;
+        font-size: 2rem;
+        height: 52rem;
+        transition: all 1s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+        &--front {
+            background-color: $color-white;
+
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &--1 {
+                background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+    
+            }
+
+            &--2{
+                background-image: linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+    
+            }
+
+            &--3{
+                background-image: linear-gradient(to right, lightgreen, darkgreen);
+    
+            }
+        }
+    }
+   
+
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+    //front side styling ****** CARD FLIP PICS *****
+    &__picture {
+        background-size: cover;
+        background-position: center;
+        height: 23rem;
+        background-blend-mode: luminosity;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+
+
+        &--1{
+            background-image: url(pic/space.jpg), linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+        }
+
+        &--2{
+            background-image: url(pic/space.jpg), linear-gradient(to right, $color-tertiary-light, $color-tertiary-dark);
+
+        }
+
+        &--3 {
+            background-image: url(pic/space.jpg), linear-gradient(to right, lightgreen, darkgreen);
+
+        }
+    }
+
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        text-align: right;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+        
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1{
+            background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85)); 
+        
+            @media screen and (max-width: 1000px) {
+                position: relative;
+                top: -3rem;
+            }
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));        }
+    }
+
+    &__details {
+        padding: 3rem;
+        overflow: hidden;
+
+        
+
+        & ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+
+            & li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                overflow: hidden;
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
+                
+                }
+
+
+            }
+    
+        }
+
+        &-3phases {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 2rem;
+            line-height: 2.3rem;
+            @include respond(tab-land) {
+                width: 100%;
+                overflow: hidden;
+                padding: 1.5rem;
+            }
+            @include respond(tab-port) {
+                width: 100%;
+                overflow: hidden;
+                padding: 1rem;
+            }
+            @include respond(phone) {
+                width: 100%;
+                overflow: hidden;
+                padding: 1rem;
+            }
+        }
+
+
+
+    }
+    // for some reason we have double..
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: white;
+
+        @include respond(phone){            
+            margin-bottom: 0;
+        }
+        @include respond(phone){            
+
+        }
+        @include respond(phone){            
+
+        }
+    }
+
+    &__price-only {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        @include respond(phone)  {
+            margin-top: 5rem;
+        }
+
+     
+    }
+
+    &__price-value {
+        font-size: 3rem;
+        font-weight: 500;
+
+        @include respond(tab-port) {
+            font-size: .5rem;
+        }
+      
+    }
+    
+    &__price-spacing {
+        position: relative;
+        bottom: -8rem;
+        @include respond(phone)  {
+            position: relative;
+            top: 4rem;
+            line-height: 4.1rem;
+            padding: 0rem 0 ;
+            font-weight: 500;
+            
+        }
+        @include respond(tab-port)  {
+           margin-top: 0rem;
+           line-height: 4.1rem;
+           padding: 3rem 0 ;
+           font-weight: 600;
+        }
+        @include respond(tab-land) {
+            position: relative;
+            top: 4rem;
+            line-height: 4.1rem;
+            
+
+        }
+    }
+
+
+    //@include respond(tab-port) {
+        @media only screen and (max-width: 56.25em),
+        only screen and (hover: none) {
+
+    height: auto;
+    border-radius: 3px;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    
+    &__side {
+        height: auto;
+        position: relative;
+        box-shadow: none;
+
+        &--back {
+            transform: rotateY(0);
+            -webkit-clip-path:  polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(0);
+    }
+
+
+    &__details {
+        padding: 1rem 3rem;
+    }
+
+    // FRONT SIDE STYLING
+    &__cta {
+        position: relative;
+        top: 0%;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem;
+        @include respond(phone){
+            padding: 2rem 4rem 4rem 4rem;
+        }
+       
+    }
+
+    
+
+    &__price-box {
+        margin-bottom: 3rem;
+        @include respond(phone) {
+            padding: 2rem 0 ;
+        }
+        @include respond(tab-port) {
+
+        }
+    }
+
+    &__price-value {
+        font-size: 4rem;
+    }
+}
+
+}
