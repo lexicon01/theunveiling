@@ -1,5 +1,5 @@
 {
-  "name": "Disclosure-site",
+  "name": "disclosure-site",
   "version": "1.0.0",
   "description": "andrews project on github",
   "main": "index.js",
@@ -12,6 +12,6 @@
   "author": "Lexicon",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.2"
+    "node-sass": "^4.14.1"
   }
 }

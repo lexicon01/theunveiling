@@ -54,6 +54,20 @@
 
         &--3 {
             transform: translateX(0) ;
+            position: relative;
+            right: 22px;
+            @include respond(big-desktop) {
+                right: 22px;
+            }
+            @include respond(tab-land) {
+                right: 18px;
+            }
+            @include respond(tab-port) {
+                right: 13px;
+            }
+            @include respond(phone) {
+                ;
+            }
        }
 
        &-aug {
