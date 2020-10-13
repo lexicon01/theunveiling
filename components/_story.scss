@@ -25,13 +25,7 @@
         width: 15rem;
         height: 15rem;
         float: left;
-<<<<<<< HEAD
-        
         background-color: transparent;
-
-=======
-        background-color: transparent;
->>>>>>> 916385fa78427005ca153639504b5a788dd533eb
         border-radius: 50%;
         -webkit-clip-path:circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
@@ -58,23 +52,6 @@
 
         &--3 {
             transform: translateX(0) ;
-<<<<<<< HEAD
-            position: relative;
-            right: 22px;
-            @include respond(big-desktop) {
-                right: 22px;
-            }
-            @include respond(tab-land) {
-                right: 18px;
-            }
-            @include respond(tab-port) {
-                right: 13px;
-            }
-            @include respond(phone) {
-                ;
-            }
-=======
->>>>>>> 916385fa78427005ca153639504b5a788dd533eb
        }
 
        &-aug {
