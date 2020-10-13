@@ -648,11 +648,7 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-<<<<<<< HEAD
     background-color: transparent;
-=======
-    background-color: blue;
->>>>>>> 916385fa78427005ca153639504b5a788dd533eb
     border-radius: 50%;
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -673,22 +669,7 @@ body {
     transform: scale(1.2) translateZ(0);
     transition: all .8s ease; }
     .story__img--3 {
-<<<<<<< HEAD
-      transform: translateX(0);
-      position: relative;
-      right: 22px; }
-      @media only screen and (min-width: 112.5em) {
-        .story__img--3 {
-          right: 22px; } }
-      @media only screen and (max-width: 75em) {
-        .story__img--3 {
-          right: 18px; } }
-      @media only screen and (max-width: 56.25em) {
-        .story__img--3 {
-          right: 13px; } }
-=======
       transform: translateX(0); }
->>>>>>> 916385fa78427005ca153639504b5a788dd533eb
     .story__img-aug {
       position: relative;
       right: 18px; }

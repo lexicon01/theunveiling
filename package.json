@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "disclosure-site",
-=======
   "name": "Disclosure-site",
->>>>>>> 916385fa78427005ca153639504b5a788dd533eb
   "version": "1.0.0",
   "description": "andrews project on github",
   "main": "index.js",
@@ -16,10 +12,6 @@
   "author": "Lexicon",
   "license": "ISC",
   "devDependencies": {
-<<<<<<< HEAD
-    "node-sass": "^4.14.1"
-=======
     "node-sass": "^4.9.2"
->>>>>>> 916385fa78427005ca153639504b5a788dd533eb
   }
 }
