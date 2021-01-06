@@ -742,7 +742,7 @@ body {
         -webkit-clip-path: circle(50% at 50% 50%); } }
   .teachers__img {
     height: 100%;
-    transform: scale(1.2) translateZ(0);
+    transform: scale(1) translateZ(0);
     transition: all .8s ease; }
     .teachers__img--3 {
       transform: translateX(0); }
