@@ -80,6 +80,9 @@
        &-rudolf {
            position: relative;
            right: 6rem;
+           
+       &-q {
+           transform: scale(0) translateZ(0);
        }
     }
 
